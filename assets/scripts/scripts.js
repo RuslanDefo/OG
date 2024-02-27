@@ -23,7 +23,6 @@ $(document).ready(function () {
     $(".show-hide").click(function () {
         let $list = $(this).siblings(".content-trigger");
         let $items = $list.find(".info-block").slice(3, 6);
-        console.log($items)
         if (switcher === 0) {
             $items.show(); // Показываем выбранные элементы
             $(this).text('Свернуть');
@@ -32,7 +31,6 @@ $(document).ready(function () {
             $items.hide(); // Скрываем выбранные элементы
             $(this).text('Показать полностью');
             switcher = 0;
-            console.log($items);
         }
     });
 });
