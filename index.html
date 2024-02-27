@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Web-Dev</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link href="/assets/styles/reset.css" rel="stylesheet">
+    <link href="/assets/styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-promo">
+        <div class="header-promo__container">
+            <div class="header-promo__web-dev">
+                <div class="header-promo__photo">
+                    <img alt="photo" class="header-promo__photo" src="/assets/images/photo1.jpg">
+                </div>
+                <div class="header-promo__text">
+                    <h1 class="header-promo__fullname">Руслан Владимирович</h1>
+                    <h2 class="header-promo__job">Веб-разработчик</h2>
+                </div>
+            </div>
+            <button class="header-promo__button" onclick="window.location.href='#footer'">Мои контакты</button>
+        </div>
+    </div>
+
+
+</header>
+
+<main class="content">
+
+    <div class="header-menu">
+        <ul class="header-menu__links">
+            <li class="header-menu__link active js-tab-trigger" data-tab="1">Обо мне</li>
+            <li class="header-menu__link js-tab-trigger" data-tab="2">Опыт работы</li>
+            <li class="header-menu__link js-tab-trigger" data-tab="3">Навыки</li>
+        </ul>
+    </div>
+
+    <section class="about-me">
+        <div class="about-me__picture" id="block">
+        </div>
+        <div class="about-me__content js-tab-content active" data-tab="1">
+            <h3 class="about-me__title">Привет</h3>
+            <p class="about-me__text">
+                Даже не знаю что здесь написать, поэтому оставлю исходный текст =)
+            </p>
+            <p class="about-me__text">
+                Я веб-разработчик, стремящийся к совершенству в каждом проекте. Мои работы — это искусство, сочетающее
+                инновационный дизайн с передовыми технологиями. Я специализируюсь в создании уникальных и отзывчивых
+                веб-сайтов, где каждая деталь имеет значение.
+            </p>
+
+            <p class="about-me__text"> Стремление к эстетике и функциональности вдохновляет меня на смелые идеи. Готов
+                воплотить ваши концепции в жизнь и создать веб-пространство, которое не только привлечёт,
+                но и вдохновит.</p>
+            <p class="about-me__text"> Мой опыт включает в себя разнообразные проекты, начиная от небольших предприятий
+                до крупных корпоративных веб-приложений. Благодаря глубоким знаниям в HTML, CSS и JavaScript,
+                я обеспечиваю не только эстетическую привлекательность, но и высокую производительность каждого сайта.
+                Моя цель — не просто создать веб-страницу, а воплотить вашу уникальность через интерфейс, который легко
+                используется и ценится пользователями.</p>
+            <p class="about-me__text"> Сотрудничество со мной — это не просто разработка, а взаимодействие с партнёром,
+                готовым принимать и воплощать ваши идеи в успешные веб-проекты.</p>
+
+
+        </div>
+
+        <div class="about-me__content js-tab-content resume" data-tab="2">
+            <div class="content-trigger">
+
+
+                <h3 class="about-me__title tab">Опыт работы</h3>
+                <div class="info-block exp">
+                    <h3 class="info-block__title">Фриланс</h3>
+                    <p class="info-block__text">Мои любимые проекты с фриланса (для Вашего удобства вставлю их через
+                        ссылки):
+                        <br>
+                        <a href="https://www.exportcenter.ru/en/">exportcenter.ru</a>
+                        <br>
+                        <a href="https://unionservice.net/ru/home">unionservice.net</a>
+                        <br>
+                        <a href="    https://nordstarmurmansk.com/">nordstarmurmansk.com</a>
+                        <br>
+                        <a href="   https://arcticroute.ru/">arcticroute.ru</a>
+                        <br>
+                        <a href="https://ncplus-51.com/">ncplus-51.com</a>
+                    </p>
+                    <button class="info-block__date">
+                        июнь 2018 г — по н.в.
+                    </button>
+                </div>
+
+                <div class="info-block exp">
+                    <h3 class="info-block__title">ДЖИПСТРОЙ</h3>
+                    <p class="info-block__text">второй стартап так же был написан с нуля (не смотря на возраст проекта -
+                        до сих пор является лидером на рынке в СНГ в своем сегменте). Занимаюсь поддержкой,
+                        администрированием, обслуживанием, делаю лендинги для турниров 4х4 ( компания проводит
+                        федеральные соревнования 4х4).</p>
+                    <button class="info-block__date">
+                        Январь 2015 г — по н.в.
+                    </button>
+                </div>
+
+                <div class="info-block exp">
+                    <h3 class="info-block__title">Агрегатор exist.ru</h3>
+                    <p class="info-block__text">участвовал в создании агрегатора https://exist.ru/, занимался его
+                        поддержкой, развитием, контент-менеджментом и т.д.</p>
+                    <button class="info-block__date">
+                        Январь 2013 г — Январь 2015 г
+                    </button>
+                </div>
+
+                <div class="info-block exp" style="display: none">
+                    <h3 class="info-block__title">Просто для контента</h3>
+                    <p class="info-block__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <button class="info-block__date">
+                        Январь 2013 г — Январь 2015 г
+                    </button>
+                </div>
+
+
+                <div class="info-block exp" style="display: none">
+                    <h3 class="info-block__title">Просто для контента</h3>
+                    <p class="info-block__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <button class="info-block__date">
+                        Январь 2013 г — Январь 2015 г
+                    </button>
+                </div>
+
+                <div class="info-block exp" style="display: none">
+                    <h3 class="info-block__title">Просто для контента</h3>
+                    <p class="info-block__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <button class="info-block__date">
+                        Январь 2013 г — Январь 2015 г
+                    </button>
+                </div>
+
+            </div>
+            <a class="show-hide">Показать полностью</a>
+
+        </div>
+
+
+        <div class="about-me__content js-tab-content resume" data-tab="3">
+            <div class="content-trigger">
+
+
+                <h3 class="about-me__title tab">Навыки</h3>
+                <div class="info-block skills">
+                    <button class="info-block__date skills" style="--second: 5s; --width: 80%">
+                        <span>Верстка</span>
+                    </button>
+
+                    <p class="info-block__text skills">Сверстанно много сайтов, лендингов с "нуля до деплоя",
+                        Pixel-perfect, mobile-fist, css-animation.</p>
+
+                </div>
+
+                <div class="info-block skills">
+                    <button class="info-block__date skills" style="--second: 2s; --width: 70%">
+                        <span>SAAS</span>
+                    </button>
+
+                    <p class="info-block__text skills">
+                        В крупных проектах использую препроц. SAAS, знаю синтаксис...не знаю что здесь еще сказать...
+                    </p>
+
+                </div>
+
+                <div class="info-block skills">
+                    <button class="info-block__date skills" style="--second: 5s; --width: 70%">
+                        <span>JAVA SCRIPT</span>
+                    </button>
+
+                    <p class="info-block__text skills">
+                        Работаю с js-ом, знаю event-loop, контекст, асинхронность, серверный JS (NodeJS), TS.
+                        Бывает юзаю гугл или стак оверфлоу, куда же без них =)
+                    </p>
+
+                </div>
+
+                <div class="info-block skills" style="display: none">
+                    <button class="info-block__date skills" style="--second: 7s; --width: 50%">
+                        <span>GIT</span>
+                    </button>
+
+                    <p class="info-block__text skills">коммит,пул, пуш... </p>
+
+                </div>
+
+                <div class="info-block skills" style="display: none">
+                    <button class="info-block__date skills" style="--second: 3s; --width: 50%">
+                        <span>PHP</span>
+                    </button>
+
+                    <p class="info-block__text skills">
+                        Знаю синтаксис языка в рамках посадки верстки на WP, доработки плагинов на WP и
+                        администрирования сайтов на WP.
+                    </p>
+
+
+                </div>
+
+                <div class="info-block skills" style="display: none">
+                    <button class="info-block__date skills" style="--second: 3s; --width: 40%">
+                        <span>React-JS</span>
+                    </button>
+
+                    <p class="info-block__text skills">Для себя изучал данный фрейм, большого коммерческого опыта к
+                        сожалению нет, но очень понравилось</p>
+
+                </div>
+
+            </div>
+            <a class="show-hide">Показать полностью</a>
+
+        </div>
+
+
+    </section>
+</main>
+
+<footer class="footer" id="footer">
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__contacts">
+                <a class="footer__email" href="mailto:accsharing1101@gmail.com">accsharing1101@gmail.com</a>
+                <a class="footer__phone" href="tel:+79993414854">+7 999 341-48-54</a>
+
+            </div>
+            <div class="footer__socials">
+                <a class="social__link" href="https://vk.com/id266225494">
+                    <svg fill="none" height="40" viewBox="0 0 40 40" width="40">
+                        <use href="#icon-vk"></use>
+                    </svg>
+                </a>
+                <a class="social__link" href="https://github.com/RuslanDefo?tab=overview&from=2024-02-01&to=2024-02-27">
+                    <svg fill="none" height="40" viewBox="0 0 40 40" width="40">
+                        <use href="#git"></use>
+                    </svg>
+
+                </a>
+
+
+            </div>
+        </div>
+        <div class="copyright"><b>© Руслан Владимирович,</b> 2015–2024. Веб-разработчик</div>
+    </div>
+
+
+</footer>
+
+<svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-vk">
+        <path d="M34.8409 26.7183C34.8046 26.6421 34.7707 26.5789 34.7393 26.5282C34.2188 25.6154 33.2241 24.495 31.7559 23.1667L31.7249 23.1363L31.7094 23.1213L31.6936 23.106L31.6779 23.106C31.0115 22.4875 30.5895 22.0716 30.4128 21.8587C30.0895 21.4531 30.0171 21.0425 30.1938 20.6265C30.3186 20.3122 30.7876 19.6485 31.5995 18.6343C32.0267 18.0969 32.3649 17.6661 32.6147 17.3416C34.4164 15.0094 35.1974 13.519 34.9578 12.8701L34.8647 12.7184C34.8022 12.6271 34.6408 12.5435 34.3808 12.4674C34.1202 12.3914 33.787 12.3788 33.3809 12.4294L28.8824 12.4597C28.8096 12.4345 28.7056 12.4369 28.5699 12.4674C28.4346 12.4978 28.3668 12.5131 28.3668 12.5131L28.2886 12.5512L28.2264 12.597C28.1743 12.6272 28.1171 12.6805 28.0545 12.7565C27.9923 12.8323 27.9402 12.9213 27.8987 13.0227C27.4089 14.2496 26.8521 15.3903 26.2272 16.4447C25.8419 17.0735 25.488 17.6184 25.1649 18.0798C24.8421 18.541 24.5714 18.8808 24.3528 19.0987C24.134 19.3167 23.9365 19.4914 23.7592 19.6233C23.5821 19.7553 23.4469 19.8111 23.3533 19.7907C23.2595 19.7703 23.1711 19.7501 23.0875 19.7298C22.9418 19.6385 22.8246 19.5143 22.7362 19.3572C22.6475 19.2 22.5878 19.0022 22.5565 18.7639C22.5255 18.5255 22.507 18.3204 22.5018 18.148C22.4969 17.9757 22.4991 17.7321 22.5097 17.4178C22.5206 17.1034 22.5255 16.8906 22.5255 16.7791C22.5255 16.3937 22.5331 15.9755 22.5486 15.5242C22.5644 15.073 22.5771 14.7155 22.5878 14.4521C22.5984 14.1885 22.6033 13.9096 22.6033 13.6155C22.6033 13.3215 22.585 13.0909 22.5486 12.9235C22.5128 12.7563 22.4576 12.5941 22.3851 12.4367C22.312 12.2796 22.2051 12.158 22.0648 12.0717C21.9243 11.9855 21.7496 11.9171 21.5416 11.8663C20.9896 11.7447 20.2868 11.6789 19.4327 11.6687C17.496 11.6484 16.2515 11.7702 15.6996 12.0338C15.481 12.1452 15.2831 12.2974 15.1061 12.49C14.9187 12.7131 14.8925 12.8349 15.0279 12.8549C15.6528 12.9461 16.0952 13.1641 16.3555 13.5088L16.4493 13.6915C16.5223 13.8233 16.5952 14.0566 16.6681 14.3911C16.7409 14.7257 16.7879 15.0958 16.8086 15.5012C16.8606 16.2415 16.8606 16.8752 16.8086 17.4024C16.7565 17.9298 16.7072 18.3403 16.6602 18.6344C16.6132 18.9284 16.543 19.1667 16.4493 19.3492C16.3555 19.5317 16.2931 19.6432 16.2618 19.6837C16.2305 19.7242 16.2045 19.7497 16.1838 19.7597C16.0485 19.8102 15.9077 19.836 15.762 19.836C15.6161 19.836 15.4392 19.7649 15.231 19.6229C15.0228 19.4809 14.8068 19.2858 14.5828 19.0373C14.3589 18.7888 14.1064 18.4416 13.8251 17.9955C13.5441 17.5493 13.2525 17.0221 12.9505 16.4138L12.7006 15.9726C12.5444 15.6888 12.3311 15.2755 12.0603 14.7331C11.7894 14.1906 11.5499 13.6657 11.3418 13.1587C11.2585 12.9458 11.1335 12.7837 10.967 12.6721L10.8888 12.6264C10.8368 12.5859 10.7534 12.5429 10.6389 12.4971C10.5243 12.4513 10.4047 12.4185 10.2797 12.3983L5.99988 12.4286C5.5625 12.4286 5.26575 12.5251 5.1095 12.7177L5.047 12.8089C5.01575 12.8596 5 12.9407 5 13.0523C5 13.1639 5.03125 13.3008 5.09375 13.4629C5.71857 14.8927 6.39795 16.2716 7.13208 17.5999C7.86615 18.9282 8.50403 19.9981 9.04535 20.8088C9.58685 21.6201 10.1387 22.3858 10.7011 23.1055C11.2634 23.8254 11.6357 24.2868 11.8178 24.4895C12.0001 24.6926 12.1434 24.8444 12.2475 24.9458L12.6381 25.3107C12.8879 25.5541 13.2549 25.8456 13.7391 26.1852C14.2235 26.5251 14.7597 26.8596 15.348 27.1894C15.9365 27.5187 16.621 27.7874 17.4021 27.9952C18.1831 28.2032 18.9432 28.2867 19.6826 28.2464L21.4789 28.2464C21.8432 28.2158 22.1192 28.1042 22.3068 27.9117L22.369 27.8355C22.4108 27.775 22.4499 27.6809 22.486 27.5544C22.5225 27.4277 22.5407 27.2881 22.5407 27.1362C22.53 26.7003 22.5641 26.3074 22.642 25.9576C22.7198 25.6079 22.8086 25.3443 22.9078 25.1667C23.007 24.9893 23.119 24.8397 23.2435 24.7183C23.3684 24.5967 23.4573 24.523 23.5095 24.4977C23.5614 24.4721 23.6028 24.4548 23.634 24.4444C23.884 24.3634 24.1781 24.4419 24.5168 24.6804C24.8553 24.9187 25.1728 25.2129 25.4697 25.5626C25.7665 25.9125 26.1231 26.3052 26.5396 26.7411C26.9563 27.1772 27.3206 27.5014 27.6329 27.7146L27.9452 27.8971C28.1537 28.0189 28.4245 28.1305 28.7578 28.2318C29.0905 28.3332 29.382 28.3585 29.6323 28.3079L33.6307 28.2471C34.0262 28.2471 34.334 28.1833 34.5522 28.0568C34.771 27.9301 34.9009 27.7905 34.9428 27.6386C34.9846 27.4866 34.9869 27.3141 34.9507 27.1212C34.9137 26.9289 34.8772 26.7943 34.8409 26.7183Z"
+              fill-opacity="1.000000"
+              fill-rule="nonzero" id="Mask"/>
+    </symbol>
+    <symbol id="icon-insta">
+        <path d="M20 8C16.741 8 16.333 8.01401 15.053 8.07199C12.8748 8.17197 11.1802 8.82605 10.005 10L10 10L10 10.005C8.82712 11.1796 8.17288 12.8733 8.073 15.052C8.01401 16.333 8 16.741 8 20C8 23.259 8.01401 23.668 8.07199 24.948C8.17197 27.1262 8.82605 28.8208 10 29.996L10 30L10.004 30C11.1786 31.1735 12.8727 31.8281 15.052 31.928C16.333 31.986 16.741 32 20 32C23.259 32 23.668 31.986 24.948 31.928C27.1242 31.828 28.8193 31.174 29.9951 30L30 30L30 29.9951C31.1736 28.8205 31.8286 27.1268 31.927 24.948C31.986 23.668 32 23.259 32 20C32 16.741 31.986 16.333 31.928 15.053C31.83 12.8755 31.1755 11.1803 30 10.0045L30 10L29.9955 10C28.8207 8.82755 27.1267 8.17285 24.949 8.073C23.668 8.01401 23.259 8 20 8ZM24.9648 13.5953C24.9648 12.8003 25.6098 12.1553 26.4059 12.1553C27.2008 12.1553 27.8448 12.8003 27.8448 13.5953C27.8448 14.3903 27.2008 15.0353 26.4059 15.0353C25.6098 15.0353 24.9648 14.3903 24.9648 13.5953ZM20.0042 16C17.7912 16 16 17.793 16 20C16 22.207 17.7912 24 20.0042 24C22.2103 24 24 22.2097 24 20C24 17.7903 22.2103 16 20.0042 16ZM20.0042 14C16.6875 14 14 16.6875 14 20C14 23.3125 16.6875 26 20.0042 26C23.3167 26 26 23.3125 26 20C26 16.6875 23.3167 14 20.0042 14Z"
+              fill-opacity="1.000000"
+              fill-rule="evenodd" id="Subtract"/>
+    </symbol>
+    <symbol id="git">
+        <path d="M30.4229 17.9172L30.3938 17.8426L27.5669 10.4653C27.5095 10.3207 27.4077 10.1981 27.2761 10.1149C27.1445 10.0332 26.991 9.99387 26.8362 10.0022C26.6816 10.0105 26.5332 10.0661 26.4109 10.1614C26.2903 10.2595 26.2026 10.3924 26.1602 10.5421L24.2515 16.3817L16.5227 16.3817L14.614 10.5421C14.5725 10.3916 14.4849 10.258 14.363 10.1603C14.241 10.065 14.0925 10.0094 13.9377 10.0011C13.7832 9.99277 13.6296 10.0321 13.498 10.1138C13.3667 10.1973 13.2649 10.3199 13.207 10.4642L10.375 17.8383L10.3467 17.9129C9.93994 18.9761 9.88965 20.1429 10.2036 21.2371C10.5178 22.3314 11.179 23.2939 12.0879 23.9796L12.0977 23.9871L12.1235 24.0055L16.4297 27.2303L18.5601 28.8426L19.8577 29.8224C20.0095 29.9376 20.1948 30 20.3855 30C20.5759 30 20.7612 29.9376 20.9131 29.8224L22.2109 28.8426L24.3411 27.2303L28.6733 23.9861L28.6841 23.9774C29.5908 23.2916 30.2507 22.3301 30.5642 21.2373C30.8777 20.1445 30.8281 18.9795 30.4229 17.9172Z"
+              fill-opacity="1.000000"
+              fill-rule="nonzero" id="Vector"/>
+
+    </symbol>
+
+</svg>
+
+<script src="/assets/scripts/scripts.js"></script>
+</body>
+</html>
